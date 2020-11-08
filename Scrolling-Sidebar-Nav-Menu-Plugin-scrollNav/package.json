@@ -1,0 +1,53 @@
+{
+  "name": "scrollnav",
+  "version": "2.7.3",
+  "title": "scrollNav",
+  "author": {
+    "name": "James Wilson",
+    "email": "jimmynotjim@me.com",
+    "url": "http://jimmynotjim.com"
+  },
+  "description": "A jQuery plugin for building a scrolling side navigation menu",
+  "keywords": [
+    "scrollnav",
+    "jquery",
+    "navigation",
+    "scrolling",
+    "sticky nav",
+    "scrolling nav"
+  ],
+  "homepage": "http://scrollnav.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimmynotjim/scrollNav.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/jquery.scrollNav.min.js",
+  "bugs": "https://github.com/jimmynotjim/scrollNav/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://scrollnav.com/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt qunit"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "semver": "~5.5.0",
+    "load-grunt-tasks": "~0.6.0",
+    "grunt-exec": "~0.4.2",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-qunit": "~0.5.2",
+    "grunt-contrib-uglify": "~0.6.0",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>RIT IST</title>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<!-- You can change line 11, below to use any of the available jQueryUI themes
+Example - to use the them "jquery-ui-1.12.1.customlf" line 11, will be
+<link rel="stylesheet" href="jquery-ui-1.12.1.customlf/jquery-ui.min.css"> -->
+<link rel="stylesheet" href="jquery-ui-1.12.1.orange/jquery-ui.css">
+<script src="jquery-ui-1.12.1.orange/jquery-ui.js"></script>
+<script src="Vide-0.5.1/dist/jquery.vide.min.js"></script>
+<script src="garand-sticky-73b0fbe/jquery.sticky.js"></script>
+<script src="Scrolling-Sidebar-Nav-Menu-Plugin-scrollNav/dist/jquery.scrollNav.min.js"></script>
+<script>
+   $(document).ready(function(){
+      $("#stickyheader").sticky({topSpacing:0,zIndex:1000});
+      console.log("ready");
+   });
+</script>
+<style>
+
+#dia{
+   font-size:20px;
+   display:block;
+   position: relative;
+   text-align:center;
+}
+#dia img{
+   display:block;
+   position:relative;
+   border:1px solid black;
+   max-width:150px;
+   height:auto;
+   margin-top:1em;
+   clear:left;
+   margin-left:3em;
+   margin-right:auto;
+}
+#faculty button{
+   border: 1px solid 	#FF8C00;
+   color: white;
+   padding: .5em 1em;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 18px;
+   margin:.25em;
+   background-color: 	#FF8C00;
+   border-radius: 2px;
+   transition-duration: 0.4s;
+}
+#faculty button:hover{
+   background-color:white;
+   color: 	#FF8C00;
+}
+#faculty{
+   text-align:center;
+   position:relative;
+   max-width:100%;
+   height:auto;
+
+   padding-left:1em;
+   padding-right:auto;
+   margin:auto;
+}
+#footer{
+
+   text-align:center;
+   width:100%;
+   background-color: 	#FF8C00;
+}
+
+
+body{
+   font-family: "Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+   display:flex;
+   flex-direction:column;
+   min-height:100vh;
+   width:100%;
+   padding:0;
+   margin:0;
+   overflow-x:hidden;
+}
+
+#content{
+   flex: 1;
+   padding:1em;
+   margin-bottom:auto;
+   height:auto;
+   width:60%;
+   margin:auto;
+   text-align:center
+}
+
+#header{
+   text-align:center;
+   width:100%;
+   margin:auto;
+   left:0;
+
+}
+#header p{
+   background: rgb(254, 125, 27, 1)); /* Fallback for older browsers without RGBA-support */
+   background: rgba(254, 125, 27, 0.85);
+   color:white;
+   padding:1em;
+   top:64px;
+   width:75%;
+   margin:auto;
+   border-radius:15px;
+   margin-bottom:2em;
+   font-size:18px;
+}
+#stickyheader{
+   top:0;
+   left:0;
+   width:100%;
+   background-color:	#FF8C00;
+   z-index:1000;
+}
+#logo{
+   width:auto;
+   height:60px;
+   margin-left:1em;
+}
+.scroll-nav{
+   width:15%;
+   height:auto;
+   font-weight:bold;
+   padding:0;
+   transition-duration: 0.4s;
+   margin:0;
+
+}
+.scroll-nav__list{
+   list-style:none;
+
+   transition-duration: 0.4s;
+   width:15%;
+}
+.scroll-nav__item a{
+   font-size:24px;
+   text-decoration:none;
+   color:grey;
+   transition-duration: 0.4s;
+
+}
+.scroll-nav__item--active a{
+   font-size:30px;
+   text-decoration:underline;
+   color:black;
+   transition-duration: 0.4s;
+
+}
+iframe{
+   width:1020px;
+   height:1020px;
+   overflow-x:hidden;
+   overflow-y:hidden;
+}
+h1{
+   font-size:60px;
+}
+h2{
+   font-size:50px;
+}
+
+ol{
+   list-style-type:disc;
+}
+.spacer{
+   margin-top:3em;
+}
+</style>
+</head>
+<body>
+   <div id="stickyheader">
+      <img src="RIT_hor_k.png" id="logo"></img>
+   </div>
+    <div id="header"data-vide-bg="techbg"></div>
+
+       <div id="content">
+         <!-- <section id="content" style="height:300px"></section> -->
+
+            <h2>Faculty</h2>
+            <div id="faculty"></div>
+
+            <h2 class="spacer">Undergraduate</h2>
+            <div id="under"></div>
+
+            <h2 class="spacer">Graduate</h2>
+            <div id="grad"></div>
+
+            <h2 class="spacer">Minors</h2>
+            <div id="minor"></div>
+
+            <h2 class="spacer">Employement</h2>
+            <div id="empl">
+               <iframe src="http://ist.rit.edu/api/map.php" title="Rit employement map"></iframe>
+            </div>
+
+       </div>
+
+    <div id="footer"></div>
+    <!-- Place your HTML elements above this line -->
+    <script src=index.js></script>
+</body>
+</html>
